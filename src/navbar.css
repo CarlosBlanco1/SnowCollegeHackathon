@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'FuturisticFont';
-  src: url('./NiceFont.ttf') format('truetype');
+  src: url('./assets/NiceFont.ttf') format('truetype');
 }
 
 .navbar {
