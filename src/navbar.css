@@ -1,4 +1,10 @@
 /* General Navbar Styles */
+
+@font-face {
+  font-family: 'FuturisticFont';
+  src: url('./NiceFont.ttf') format('truetype');
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -19,7 +25,8 @@
   
   /* Center Title */
   .navbar-title {
-    font-size: 20px;
+    font-family: 'FuturisticFont';
+    font-size: 4em;
     font-weight: bold;
     text-align: center;
     flex-grow: 1; /* Center aligns the title */

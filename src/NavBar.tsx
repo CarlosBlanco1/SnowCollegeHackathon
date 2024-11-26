@@ -7,7 +7,7 @@ const NavBar = () => {
     </div>
     <div className="navbar-title">CS Club Hackathon</div>
     <div className="navbar-link">
-      <a href="/">Problems</a>
+      <a href="/SnowCollegeHackathon/">Problems</a>
     </div>
   </nav>
   
