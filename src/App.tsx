@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 import NavBar from "./NavBar";
@@ -40,7 +40,7 @@ const problems: Problem[] = [
 ];
 
 const App = () => {
-  const [selectedProblem, setSelectedProblem] = useState<Problem | undefined>(
+  const [, setSelectedProblem] = useState<Problem | undefined>(
     undefined
   );
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
