@@ -1,0 +1,118 @@
+/* General Body Styles */
+
+/* App Container */
+.app-container {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+/* Problem Wrapper (adds padding to avoid overflow) */
+.problem-wrapper {
+  width: 100%; /* Take up full width */
+  display: flex;
+  justify-content: center;
+}
+
+/* Problem Grid */
+.problem-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Individual Problem Cards */
+.problem-card {
+  background-color: white;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%; /* Make cards full width */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  border-color: #0056b3; /* Intense blue border for hover */
+}
+
+/* Level Styles (intense colors) */
+.problem-card.easy {
+  background-color: #00b300; /* Intense green */
+  border: 3px solid #009900; /* Darker green border */
+  color: white; /* Ensure text is visible */
+}
+
+.problem-card.medium {
+  background-color: #ffcc00; /* Bright yellow */
+  border: 3px solid #ff9900; /* Deep orange border */
+  color: #333; /* High contrast for readability */
+}
+
+.problem-card.hard {
+  background-color: #ff0000; /* Intense red */
+  border: 3px solid #cc0000; /* Darker red border */
+  color: white; /* Ensure text is visible */
+}
+
+/* Active State (for smooth transition of 'GO TO PROBLEM') */
+.problem-card.active {
+  transform: translateY(5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Problem Level */
+.problem-level {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: inherit; /* Matches the card's text color */
+}
+
+/* Problem Name */
+.problem-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: inherit; /* Matches the card's text color */
+}
+
+/* Action Slide (GO TO PROBLEM) */
+.action-slide {
+  display: block;
+  margin-top: 20px;
+  background-color: #0056b3; /* Intense blue */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.action-slide:hover {
+  transform: scale(1.03);
+  background-color: #003d80; /* Slightly darker on hover */
+}
+
+.action-slide a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.action-slide a:hover {
+  text-decoration: underline;
+}
