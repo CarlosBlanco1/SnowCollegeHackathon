@@ -1,13 +1,21 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App.tsx";
-import { BrowserRouter } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import ProblemPage from "./ProblemPage.tsx";
+import Rules from "./Rules.tsx";
+import NavBar from "./NavBar.tsx";
 
-createRoot(document.getElementById("root")!).render(
+const root = createRoot(document.getElementById('root')!);
+
+root.render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <NavBar></NavBar>
+    <Router basename="/SnowCollegeHackathon">
+      <Routes>
+        <Route path="/" element={<ProblemPage />} />
+        <Route path="/rules" element={<Rules />} />
+      </Routes>
+    </Router>
   </StrictMode>
 );

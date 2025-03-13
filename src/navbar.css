@@ -5,6 +5,10 @@
   src: url('./assets/NiceFont.ttf') format('truetype');
 }
 
+.navbar-container-link {
+  display: flex;
+  gap: 20px;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -47,4 +51,5 @@
   .navbar-link a:hover {
     background-color: #003d80; /* Darker blue on hover */
   }
+
   
