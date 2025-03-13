@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./styles.css";
 import { Link } from "react-router-dom";
+import Rules from "./Rules";
 
 // Define the problem types
 type Problem = {
@@ -50,8 +51,8 @@ const ProblemPage = () => {
   };
   
   return (
-    <div className="app-container">
-    <div className="problem-wrapper">
+<div>
+<div className="problem-wrapper" style={{ marginBottom: '50px', marginTop:'20px'}}>
       <div className="problem-grid">
         {problems.map((problem, index) => (
           <div
@@ -77,6 +78,7 @@ const ProblemPage = () => {
         ))}
       </div>
     </div>
+    <Rules></Rules>
   </div>
   );
 };

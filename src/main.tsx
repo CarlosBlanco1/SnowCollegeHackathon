@@ -3,7 +3,6 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ProblemPage from "./ProblemPage.tsx";
-import Rules from "./Rules.tsx";
 import NavBar from "./NavBar.tsx";
 
 const root = createRoot(document.getElementById('root')!);
@@ -14,7 +13,7 @@ root.render(
     <Router basename="/SnowCollegeHackathon">
       <Routes>
         <Route path="/" element={<ProblemPage />} />
-        <Route path="/rules" element={<Rules />} />
+        {/* <Route path="/rules" element={<Rules />} /> */}
       </Routes>
     </Router>
   </StrictMode>

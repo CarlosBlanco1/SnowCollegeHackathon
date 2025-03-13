@@ -10,9 +10,9 @@ const NavBar = () => {
       <div className="navbar-link">
         <a href="/SnowCollegeHackathon/">Problems</a>
       </div>
-      <div className="navbar-link">
+      {/* <div className="navbar-link">
         <a href="/SnowCollegeHackathon/rules">Rules</a>
-      </div>
+      </div> */}
     </div>
   </nav>
   
