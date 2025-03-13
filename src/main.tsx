@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { Route, HashRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ProblemPage from "./ProblemPage.tsx";
 import Rules from "./Rules.tsx";
 import NavBar from "./NavBar.tsx";
